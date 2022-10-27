@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#display{
+    margin: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#card{
+    /*border: 1px grey solid;*/
+    width: 250px;
+
+    -webkit-box-shadow: 7px 6px 4px 0px rgba(0,0,0,0.8); 
+    box-shadow: 7px 6px 4px 0px rgba(0,0,0,0.8);
+
+}
+img{
+    width: 248px;
+}
+
+h1{
+    font-size: small;
+}
+
+#descuento{   
+    
+    text-align: center;
+    background-color: black;
+    color: yellow;
+    font-size:x-large;
+    /*left: 160px;
+    /*top: -200px;*/
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    border: 1px gray solid;
+    
+}
+
+#card:hover{
+    transform: scale(1.1);
+}
+
+/* navbar */
+header {
+    width: 100%;
+    height: 70px;
+    background: #222;
+}
+header nav {
+    line-height: 70px;
+}
+
+header nav .menu {
+    float: right;
+}
+
+header nav .menu li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header nav .menu li a {
+    color: #eee;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+header nav .menu li a:hover {
+    border-bottom: solid 2px rgb(0, 119, 255);
+    transition: .3s;
+}
+
+header nav .logo {
+    color: #eee;
+    margin: 0 10px;
+    padding: 0 5px;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;        
+    
+}
+
+header nav .menu li .contact {
+    color: rgb(0, 119, 255);
+}
+.btn{
+    padding: 10px;
+    background-color: #222;
+    font :bold;
+    color: rgb(0,119,255);
+    border: 0;
+    cursor: pointer;
+    font-size: 18;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.flotante{
+    
+    padding:20px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 375px;
+    height: 500px;
+    z-index: 1;
+    background-color:white;
+
+    transform: translate(-50% ,-50%);
+
+    
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.54); 
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.54);
+
+    
+    visibility: hidden;
+
+      backdrop-filter: blur(5px) saturate(180%);
+      -webkit-backdrop-filter: blur(5px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.64);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+    
+}
+
+.acerade{
+   
+    width:100%;
+    height: 100%;
+    border:1px red solid;
+    
+}
+.cerrarFlotante{
+    
+    position: relative;  
+    padding: 15px 50px;  
+    top:0%;
+    left:50%;
+    transform: translate(-50%);
+}
+.flotante>.acerade>p{
+    margin:10px;
+}
+
+#git2{
+    position: relative;
+    top:10px;
+    left: 80px;
+    width: 170px;
+}
+
+.dd{
+    width: 100px;
+}

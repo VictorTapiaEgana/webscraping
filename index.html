@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Ripley WebScraper</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo">WebScraper<b></b></label>
+            
+            <ul class="menu">
+                <li><button class ="btn" id="1" type="button">Notebooks</button></li>
+                <li><button class ="btn" id="2"  type="button">Television</button></li>
+                <li><button class ="btn" id="3"  type="button">Mubles</button></li>
+                <li><button class ="btn" id="4"  type="button">Deportes</button></li>
+                <li><button class ="btn" id="info"  type="button">Informacion</button></li>
+            </ul>
+        </nav>
+    </header>        
+        
+
+    <div id="display">
+
+    </div>
+
+    <!-- TEMPLATE-->
+
+    <template>
+
+        <div id="card">
+                <div id="descuento">
+                <h1 id="descuento1"></h1>
+             </div>
+
+             <a target ="_blank" ><img id="imagen"src="" alt=""></a>                                                    
+             <h1 id="titulo">aaa</h1>
+             <h4 id="precio1">aaa</h3>
+             <h3 id="precio2">aaa</h3>  
+             <h2 id="precio3">aaa</h2>  
+           
+        </div>
+
+    </template>
+
+    <div id ="flotante1" class="flotante">  
+        <div class="acerade">
+            <h2>Acerca de.</h2>
+            <b><p>
+                Proyecto de Web scraping a pagina web de empresas <a href="https://simple.ripley.cl/" target="_blank"> Ripley</a>
+                
+                <p>OBJETIVO:</p>
+                
+                <p> Obtener Informacion en tiempo real de descuentos, imagenes, precio, descripcion y vinculos.
+                    con los cuales generar datos en formato JSON, para ser manejados y mostrados desde javascript.
+                </p>
+                <p> obtencion de datos generados con express js</p>
+
+                <hr>
+                     <img class = "dd" src="/icon/html-5.svg" alt="logo html">
+                     <img class = "dd"  src="/icon/css3.svg" alt="logo css3">
+                     <img class = "dd"  src="/icon/javascript.svg" alt="logo javascript">                  
+                
+            </p></b>
+            <button id="cerrar" class="cerrarFlotante"><b>Cerrar</b></button>
+            <div class="github">
+                <a href="https://github.com/VictorTapiaEgana" target="_blank" rel="noopener noreferrer"><img id="git2" src="/icon/GitHub-Logo.png">
+            </div>
+        </div> 
+ 
+</div>
+
+ <script src="/src/app.js"></script>   
+</body>
+</html>
