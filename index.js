@@ -3,7 +3,7 @@ const cheerios = require('cheerio');
 const express= require('express');
 const cors = require('cors');
 
-const PORT = 8000;
+const PORT = 3000;
 const URL1 = 'https://simple.ripley.cl/tecno/computacion/notebooks?source=menu&page=1&s=mdco';      // Notebook    
 const URL2 = 'https://simple.ripley.cl/tecno/television?source=menu&s=mdco';                        // Television           
 const URL3 = 'https://simple.ripley.cl/muebles/living-y-sala-de-estar?source=menu&s=mdco';          // Living 
@@ -14,9 +14,8 @@ let HTML ='';
 const app = express();
 app.use(cors());
 
-// app.get('/',function(req,res){
-    // res.json("Este es el Scraper");
-// });
+app.use(express.static(__dirname + '/src'));
+//app.use(express.static(__dirname + '/icon'));
 
 app.get('/notebook',(req,res)=>{
          
@@ -278,8 +277,20 @@ app.get('/deportes',(req,res)=>{
 
 });
 
+app.get('/estado', (req, res)=> {  
+    
+    res.send('Servidor Corriendo !!!');   
+        
+});  
 
-app.set('port',process.env.PORT || 8000);
+
+
+
+
+
+
+//app.set('port',process.env.PORT || 8000);
+
 app.listen(PORT,() => console.log(`Servidor corriendo en ${PORT}`));
 
 

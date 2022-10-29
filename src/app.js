@@ -9,10 +9,10 @@ const btninfo = document.getElementById('info');
 const btncerrar = document.getElementById('cerrar');
 const FLOTANTE= document.getElementById('flotante1');
 
-const URL1 = 'http://localhost:8000/notebook';
-const URL2 = 'http://localhost:8000/television';
-const URL3 = 'http://localhost:8000/living';
-const URL4 = 'http://localhost:8000/deportes';
+const URL1 = '/notebook';
+const URL2 = '/television';
+const URL3 = '/living';
+const URL4 = 'deportes';
 
 
 
