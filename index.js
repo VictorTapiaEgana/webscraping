@@ -3,7 +3,7 @@ const cheerios = require('cheerio');
 const express= require('express');
 const cors = require('cors');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const URL1 = 'https://simple.ripley.cl/tecno/computacion/notebooks?source=menu&page=1&s=mdco';      // Notebook    
 const URL2 = 'https://simple.ripley.cl/tecno/television?source=menu&s=mdco';                        // Television           
 const URL3 = 'https://simple.ripley.cl/muebles/living-y-sala-de-estar?source=menu&s=mdco';          // Living 
@@ -261,11 +261,11 @@ app.get('/deportes',(req,res)=>{
                             }                                                                                   
                 });  //fin $  
 
-                // Eliminar objetos duplicados en el Array
-                // https://es.stackoverflow.com/questions/41202/eliminar-un-array-de-objetos-duplicados-en-javascript/41206
+                
+                
                 let hash = {};
                 Productos = Productos.filter(o => hash[o.titulo] ? false : hash[o.titulo] = true);
-                //console.log("anted del Json : " + Productos)
+               
 
             
                 res.json(Productos);                    
