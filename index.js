@@ -19,7 +19,7 @@ app.use(express.static(__dirname + '/src'));
 
 app.get('/notebook',(req,res)=>{
          
-        axios(URL1)
+        axios.get(URL1)
             .then(response => {                
                 HTML = response.data;      
                 const $ = cheerios.load(HTML);    
