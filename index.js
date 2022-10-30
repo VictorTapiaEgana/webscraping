@@ -12,7 +12,7 @@ const URL4 = 'https://simple.ripley.cl/deporte-y-aventura/fitness?source=menu&s=
 let HTML ='';
 
 const app = express();
-app.use(cors());
+//app.use(cors());
 
 app.use(express.static(__dirname + '/src'));
 //app.use(express.static(__dirname + '/icon'));
