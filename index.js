@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/src'));
 //app.use(express.static(__dirname + '/icon'));
 
-app.route.get('/notebook',(req,res)=>{
+app.get('/notebook',(req,res)=>{
          
         axios.get(URL1)
             .then(response => {                
