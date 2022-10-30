@@ -279,7 +279,7 @@ app.get('/deportes',(req,res)=>{
 
 app.get('/estado', (req, res)=> {  
     
-    res.send('Servidor Corriendo !!! en PUERTO' +  PORT);   
+    res.send('Servidor Corriendo en Puerto  :' +  PORT + ' !!!');   
         
 });  
 
